@@ -1,15 +1,17 @@
 {
   "name": "apside-list",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-library" : "vue-cli-service build --target lib --name apside-list ./src/install.js",
+    "build-library": "vue-cli-service build --target lib --name apside-list ./src/install.js",
     "lint": "vue-cli-service lint"
   },
-  "main" : ".dist/apside-list.common.js",
+  "main": ".dist/apside-list.common.js",
   "module": "dist/apside-list.umd.min.js",
   "dependencies": {
     "@mdi/font": "^6.7.96",
@@ -17,7 +19,6 @@
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vuetify": "^2.6.6"
-
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
