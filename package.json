@@ -1,16 +1,23 @@
 {
-  "name": "list-apside",
+  "name": "apside-list",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "files": ["dist/*"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library" : "vue-cli-service build --target lib --name apside-list ./src/install.js",
     "lint": "vue-cli-service lint"
   },
+  "main" : ".dist/apside-list.common.js",
+  "module": "dist/apside-list.umd.min.js",
   "dependencies": {
     "@mdi/font": "^6.7.96",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vuetify": "^2.6.6"
+
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -18,14 +25,12 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "axios": "^0.27.2",
     "deepmerge": "^4.2.2",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "~1.32",
     "sass-loader": "^13.0.0",
-    "vue-template-compiler": "^2.6.14",
-    "vuetify": "^2.6.6"
+    "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
     "root": true,

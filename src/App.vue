@@ -16,7 +16,7 @@
 <script>
 import axios from 'axios'
 export default {
-  name: "ListApside",
+  name: "ApsideList",
   props: {
     url: {
       type: String,
