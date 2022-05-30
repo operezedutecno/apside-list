@@ -9,6 +9,14 @@
         :loading="loading"
         class="elevation-1"
       ></v-data-table>
+      <v-alert
+        dense
+        text
+        type="info"
+      >
+        Componente desarrollado por <a href="https://apside.cl" target="_blank">Apside</a><br>
+        Estamos consultando la siguiente URL: <b>{{ url }}</b>
+      </v-alert>
     </v-app>
   </div>
 </template>
