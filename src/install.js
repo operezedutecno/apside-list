@@ -1,4 +1,4 @@
-import List from "./App.vue";
+import List from "./List.vue";
 import vuetify from '@/plugins/vuetify'
 
 const ApsideList = {

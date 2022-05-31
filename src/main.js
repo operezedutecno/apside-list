@@ -6,5 +6,13 @@ Vue.config.productionTip = false
 
 new Vue({
   vuetify,
-  render: h => h(List, { props:{ url: 'https://jsonplaceholder.typicode.com/users', titles: [ 'id', 'name', 'username', 'email' ]} }),
+  render: h => h(List, { props:{ url: 'https://jsonplaceholder.typicode.com/users', 
+        titles: [
+          { text: 'Id', value: 'id'},
+          { text: 'Nombre', value: 'name'},
+          { text: 'Correo electrónico', value: 'email'},
+          { text: 'Usuario', value: 'username' } 
+        ]
+      } 
+  }),
 }).$mount('#app')

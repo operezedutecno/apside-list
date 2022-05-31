@@ -46,10 +46,11 @@ export default {
   },
   mounted () {
     this.titles.forEach(item => {
-      this.headers.push({ text: item,
-          align: 'start',
-          sortable: false,
-          value: item
+      this.headers.push({ 
+        text: item.text,
+        align: 'start',
+        sortable: false,
+        value: item.value
       })
     })
   },
