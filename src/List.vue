@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <v-app>
+      <h1>{{ title }}</h1>
       <v-data-table
         :headers="headers"
         :items="data"
@@ -34,6 +35,10 @@ export default {
     titles: {
       type: Array,
     },
+    title: {
+      type: String,
+      default: 'Listado Apside'
+    }
   },
   data() {
     return {
