@@ -31,34 +31,27 @@ export default {
       type: String,
       default: "",
     },
+    titles: {
+      type: Array,
+    },
   },
   data() {
     return {
-      headers: [
-        {
-          text: 'Id',
-          align: 'start',
-          sortable: false,
-          value: 'id',
-        },
-        {
-          text: 'Body',
-          align: 'start',
-          sortable: false,
-          value: 'body',
-        },
-        {
-          text: 'Title',
-          align: 'start',
-          sortable: false,
-          value: 'title',
-        }
-      ],
+      headers: [],
       data: [],
       totalDesserts: 0,
       loading: true,
       options: {},
     }
+  },
+  mounted () {
+    this.titles.forEach(item => {
+      this.headers.push({ text: item,
+          align: 'start',
+          sortable: false,
+          value: item
+      })
+    })
   },
   watch: {
     options: {
